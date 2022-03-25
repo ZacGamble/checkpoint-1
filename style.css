@@ -1,0 +1,30 @@
+:root{
+    --primary: #07AB80;
+    --secondary: #5b636e;
+    font-size: 20px;
+}
+
+body{
+    font-family: 'Manrope', sans-serif;
+}
+
+header{
+    background-color: var(--primary);
+    font-family: 'Smokum', cursive;
+}
+#txt-over-img{
+    padding: 20%;
+  
+}
+#row-2{
+    /* background-color: var(--secondary); */
+    background-image: url(https://wallpapercave.com/wp/wp5586829.jpg);
+    background-size: cover;
+    min-height: 95vh;
+}
+#row-3{
+    background-color: var(--primary);
+}
+#row-4{
+    background-color: #5b636e;
+}
