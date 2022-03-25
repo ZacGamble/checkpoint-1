@@ -28,26 +28,31 @@
   <body class="container-fluid">
 
       <!-- Header Row-1 -->
-      <header class="row">
+      <header class="row nabvar sticky-top">
+          
           <div class="col d-flex">
-              <div class="mdi-spin fs-3">
-                ( ͡° ͜ʖ ͡°)   
-              </div>
-
-            <h1 class="mx-3">History of Memes</h1>
-          </div>
+              <div class="mdi-spin fs-3 px-3">
+                  ( ͡° ͜ʖ ͡°)   
+                </div>
+                <a class="text-decoration-none" href="#">
+                    
+                    <h1 class="mx-3">History of Memes</h1>
+                </div>
+            </a>
       </header>
+
+      <!-- Main page content begins, row-2 -->
 <main>
-    <!-- Main page content begins; row-2 -->
     <div id="row-2" class="row p-4">
-        <div class="col-md-3">
-            <div class="card d-flex flex-column p-2">
+        <div class="col-sm-12 col-md-5">
+            <h6 class="text-secondary">Submission Card</h6>
+            <div class="card d-flex flex-column p-2 text-center">
                 <h4>Information please:</h4>
                 <form class="d-flex flex-column flex-nowrap p-4">
                     <input type="text" placeholder="Name">
                     <input type="text" name="email" placeholder="Email">
                     <input type="text" placeholder="Phone">
-                    <input type="text" name="Comments" placeholder="Comments">
+                    <input type="text" name="Comments" placeholder="Comments" style="height:5rem;; width: 50%;">
                 <span>
                     <input name="sub" type="radio" class="my-3">
                     <label for="sub">Subscribe for dank memes</label>
@@ -60,8 +65,8 @@
         <div class="col-1">
         </div>
 
-        <div class="col-8 p-5 d-flex flex-column position-relative">
-            <span id="txt-over-img" class="text-light position-absolute text-wrap " style="width: 100%">
+        <div class="col d-none d-lg-block p-5 d-flex flex-column position-relative">
+            <span id="txt-over-img" class="text-light text-wrap" style="width: 100%">
                 <h3>TEXT OVER AN IMAGE</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis incidunt consequuntur, labore aliquam id obcaecati porro blanditiis quae accusamus dicta ducimus libero laudantium soluta molestias totam. Beatae accusantium ipsa neque?</p>
             </span>
@@ -70,26 +75,29 @@
     </div>
 
       <!-- Spillover Row-3 -->
-    <div id="row-3" class="row">
-        <div class="col-6">
+    <div id="row-3" class="row border">
+        <div class="col-6 my-3">
             <h3>DANK MEMES DAILY: EVERYDAY.</h3>
             <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloribus molestiae fuga labore at quisquam repudiandae tempora amet eum nam, aut quibusdam. Ipsum excepturi repellendus deserunt sapiente eaque aspernatur rerum!</P>
 
         </div>
 
-    <!-- TODO offset the second group of content, resort mobile -->
-        <div class="col-5 d-flex flex-column bg-light">
-            <span class="mdi mdi-wrench">
-                Fix problems before they bite.
-            </span><span class="mdi mdi-car">
-                Driving fast can result in crashes.
-            </span><span class="mdi mdi-face">
-                Look at yourself carefully to be sure.
-            </span><span class="mdi mdi-bolt">
-                Sometimes you screw up before you can screw bolt in.
-            </span><span class="mdi mdi-phone">
-                Talk to others when problem hurts.
-            </span>
+    <!-- TODO offset the second group of content, re-sort mobile -->
+        <div id="skew-1" class="col-5 bg-light shadow my-3">
+          <div class="d-flex flex-column flex-nowrap">
+
+              <span class="mdi mdi-wrench">
+                  Fix problems before they bite.
+                </span><span class="mdi mdi-car">
+                    Driving fast can result in crashes.
+                </span><span class="mdi mdi-face">
+                    Look at yourself carefully to be sure.
+                </span><span class="mdi mdi-bolt">
+                    Sometimes you screw up before you can screw bolt in.
+                </span><span class="mdi mdi-phone">
+                    Talk to others when problem hurts.
+                </span>
+            </div>
         </div>
     
         <!-- another dummy column for easy spacing -->
@@ -97,44 +105,64 @@
         </div>
     </div>
     
-    <!-- Placeholder IMG and more Row-4 -->
-    <div class="row">
-        <div class="col-4">
-            <img class="img-fluid" src="https://cdn.substack.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fa53b4556-09e3-41da-9b36-4fd1e3d267a7_890x906.png" alt="warped version of Gigachad">
+    
+    <!-- Placeholder IMG (gigaChad) and more Row-4 -->
+    <div id="row-4" class="row d-flex">
+        <div class="col img-fluid">
+            <img class="img-fluid flex-grow-1" src="https://cdn.substack.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fa53b4556-09e3-41da-9b36-4fd1e3d267a7_890x906.png" alt="warped version of Gigachad">
 
         </div>
-        <div class="col-8 p-5">
+        <div id="keep-your-dank" class="col mt-5">
             <h2 class="mdi mdi-check m-2">KEEP YOUR MEMES DANK LIKE YOUR LIFE'S AT STAKE</h2>
-            <p class="p-3 m-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque optio reprehenderit cum soluta animi dicta nostrum hic itaque, sint ipsa fugiat illo. Dolore asperiores provident dicta ducimus hic inventore voluptate. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique adipisci, voluptatibus sequi enim obcaecati, sed officiis beatae aliquam nobis ipsum cumque repudiandae. Quibusdam amet saepe impedit quas quia non voluptatibus?</p>
+            <p class="p-3 m-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque optio reprehenderit cum soluta animi dicta nostrum hic itaque, sint ipsa fugiat illo. Dolore asperiores provident dicta ducimus hic inventore voluptate. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique adipisci, voluptatibus sequi enim obcaecati, sed officiis beatae aliquam nobis ipsum cumque repudiandae. </p>
             <span class="d-flex justify-content-end">
-                <button type="button">Press for thing</button>
+                <button type="button">Press for more thing</button>
             </span>
         </div>
     </div>
 
     <!-- Second "spillover" row-5, center card stacks top mobile -->
-    <div class="row">
-        <div class="col-4">
-            <div class="card">
+    <div id="row-5" class="row align-items-center">
+        <div class="col-4 my-1 card-1 order-2 order-md-1">
+            <div class="card bg-light">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aliquam provident at inventore a molestias, nemo reiciendis! Vero officiis nobis enim, minima sint cupiditate earum itaque, beatae, inventore saepe magni?</p>
+            </div>
+        </div>
+
+        <div id="top-card" class="col-4 my-1 p-2 card-1 order-1 order-md-2">
+            <div class="card d-flex flex-column">
+                <span class="d-flex justify-content-center">
+                    <i class="mdi mdi-star bg-dark text-light"></i>
+                    <i class="mdi mdi-star bg-dark text-light"></i>
+                    <i class="mdi mdi-star bg-dark text-light"></i>
+                </span>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ab qui consectetur, ipsam iure, modi sed impedit dicta velit vel quos unde perspiciatis iusto aliquid sapiente eligendi odit molestias quia. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus blanditiis voluptatibus quod, enim praesentium voluptates expedita nostrum delectus nisi commodi similique obcaecati itaque eos maxime nam ea, quisquam distinctio suscipit.</p>
 
             </div>
         </div>
-        <div class="col-4">
-            <div class="card">
-
-            </div>
-        </div>
-        <div class="col-4">
-            <div class="card">
+        <div class="col-4 my-1 card-1 order-3 order-md-3">
+            <div class="card bg-light">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid cum nemo distinctio possimus esse ipsam maiores molestiae excepturi nihil. Dignissimos omnis praesentium iste aspernatur porro itaque adipisci excepturi modi doloremque.</p>
 
             </div>
         </div>
     </div>
 
     <!-- Penultimate Row-6 -->
-    <div class="row">
-        <div class="col">
+    <div id="row-6" class="row my-3">
 
+        <div class="col-1">
+        </div>
+
+        <div class="col-9 py-3">
+            <span class="mdi mdi-cat bg-dark text-light fs-3">
+                Yearning for yarn balls? Look no further! ( ͡° ᴥ ͡°)
+            </span>
+            <p class="bg-dark text-light text-wrap" style="width: 70%">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut cumque unde fugiat fugit, voluptates aut cum minima tempore velit dolore aperiam repellendus id dicta iste voluptatibus! Totam sapiente rem quia.</p>
+        </div>
+        <div class="col-2 d-flex align-items-center fs-1">
+            ( ͡♥ ͜ʖ ͡♥)
         </div>
     </div>
 

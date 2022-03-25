@@ -1,11 +1,13 @@
 :root{
     --primary: #07AB80;
     --secondary: #5b636e;
-    font-size: 20px;
+    font-size: 16px;
+    /* overflow-x: hidden; */
 }
 
 body{
     font-family: 'Manrope', sans-serif;
+    background-color: #fdfdfd;
 }
 
 header{
@@ -14,10 +16,9 @@ header{
 }
 #txt-over-img{
     padding: 20%;
-  
 }
+
 #row-2{
-    /* background-color: var(--secondary); */
     background-image: url(https://wallpapercave.com/wp/wp5586829.jpg);
     background-size: cover;
     min-height: 95vh;
@@ -25,6 +26,56 @@ header{
 #row-3{
     background-color: var(--primary);
 }
-#row-4{
-    background-color: #5b636e;
+
+
+/* All-important media queries */
+@media (min-width: 768px) { 
+    #skew-1{
+        transform: translateY(50px);
+    }
+    #keep-your-dank{
+        transform: translateY(50px);
+    }
+ }
+@media (max-width: 768px) {
+    #row-3{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    #row-4{
+        flex-direction: column-reverse;
+    }
+
+    #row-5{
+        flex-direction: column;
+        align-items: center;
+    }   
+    .card-1{
+        min-width: 80%;
+    } 
 }
+
+
+/* #row-4{
+
+} */
+
+#row-5{
+    background-color: beige;
+}
+
+#row-6{
+    background-color: var(--primary);
+    min-height: 10vh;
+}
+
+a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    background-color: green;
+    transition: .3s;}
