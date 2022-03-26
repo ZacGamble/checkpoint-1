@@ -31,27 +31,38 @@ header{
 /* All-important media queries */
 @media (min-width: 768px) { 
     #skew-1{
-        transform: translateY(50px);
+        transform: translateY(80px);
     }
     #keep-your-dank{
-        transform: translateY(50px);
+        transform: translateY(60px);
     }
  }
 @media (max-width: 768px) {
+    #row-2{
+        background-image: url(https://cdn.cnn.com/cnnnext/dam/assets/190517103414-01-grumpy-cat-file-restricted.jpg);
+        background-position: bottom;        
+    }
     #row-3{
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
         margin-top: 20px;
     }
+    #skew-1{
+        transform: translateX(-15px);
+    }
     #row-4{
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     #row-5{
         flex-direction: column;
         align-items: center;
     }   
+    #row-6{
+    flex-direction: column;
+    align-items: center;
+    }
     .card-1{
         min-width: 80%;
     } 
@@ -63,7 +74,7 @@ header{
 } */
 
 #row-5{
-    background-color: beige;
+    background-color: var(--secondary)
 }
 
 #row-6{
